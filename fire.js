@@ -86,7 +86,7 @@ function f(){
         audio.play();
         console.log(count);
         if (count >= 40 && count<75) {
-          text("黄倩 i love you", 220);
+          text("黄倩 i love you", 50);
         }
         for (let i = 0; i < 120; i++) {
           particles.push(new Particle(this.x, this.y, this.col));
