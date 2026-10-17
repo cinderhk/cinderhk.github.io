@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="referrer" content="no-referrer">
+  <meta name="description" content="RTSP Lite Viewer 用户协议">
+  <title>RTSP Lite Viewer - 用户协议</title>
+  <style>
+    :root { color-scheme: light dark; --bg: #f7f8fa; --paper: #fff; --text: #202d3d; --muted: #637083; --line: #dde3ea; --accent: #276b54; }
+    * { box-sizing: border-box; }
+    html { scroll-padding-top: 24px; }
+    body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.8 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; overflow-wrap: anywhere; }
+    main { max-width: 860px; margin: 28px auto; padding: 42px 48px; background: var(--paper); border: 1px solid var(--line); border-radius: 16px; }
+    header { text-align: center; padding-bottom: 24px; margin-bottom: 28px; border-bottom: 1px solid var(--line); }
+    .brand { margin: 0 0 12px; color: var(--accent); font-size: clamp(1.5rem, 3.5vw, 1.75rem); line-height: 1.35; font-weight: 700; letter-spacing: .01em; }
+    h1 { font-size: 2rem; line-height: 1.3; margin: 0 0 12px; }
+    .date { color: var(--muted); font-size: 15px; margin: 0; }
+    h2 { font-size: 1.2rem; line-height: 1.5; margin: 32px 0 12px; }
+    p { margin: 12px 0; }
+    ul { padding-left: 1.3em; }
+    li { padding-left: 3px; margin: 10px 0; }
+    a { color: var(--accent); text-underline-offset: .18em; }
+    a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+    strong { font-weight: 650; }
+    @media (max-width: 600px) { main { margin: 0; padding: 28px 22px 36px; border: 0; border-radius: 0; } h1 { font-size: 1.75rem; } }
+    @media (prefers-color-scheme: dark) { :root { --bg: #101821; --paper: #1a2633; --text: #eaf0f6; --muted: #aab8c8; --line: #354556; --accent: #70d3ad; } }
+    @media print { :root { --bg: #fff; --paper: #fff; --text: #000; --muted: #333; --line: #bbb; --accent: #000; } body { font-size: 11pt; } main { max-width: none; margin: 0; padding: 0; border: 0; } h2 { break-after: avoid; } }
+  </style>
+</head>
+<body>
+  <main id="content">
+    <header>
+      <p class="brand">RTSP Lite Viewer</p>
+      <h1>用户协议</h1>
+      <p class="date">更新日期：<time datetime="2026-10-17">2026年10月17日</time></p>
+    </header>
+<p>本协议适用于您使用 RTSP Lite Viewer 的行为。本应用由其应用商店页面所列的开发者提供（以下简称“我们”）。使用本应用前，请阅读本协议和<a href="rtsp_lite_viewer_privacy-policy_zh.html">隐私政策</a>。</p>
+    <h2>1. 关于本应用</h2>
+    <p>RTSP Lite Viewer 用于连接您有权访问的摄像头和媒体服务。功能包括视频播放、ONVIF 手动连接、通过外部 GB28181 网关获取播放地址、多摄像头画面、截图、录像、本地回放、分享，以及配置导入和导出。</p>
+    <p>我们不提供摄像头硬件、公共视频资源库或由开发者运营的云端录像服务。您需要自行提供设备、连接信息、凭据和网络。功能是否可用取决于设备兼容性、媒体格式、权限和网络状况。</p>
+    <h2>2. 合法授权使用</h2>
+    <p>请仅将本应用用于您拥有或获准访问的设备和内容。在查看、录制或分享他人的影像、声音或个人信息前，请履行必要的告知义务，并取得所需的许可或同意。</p>
+    <p>您不得使用本应用实施以下行为：</p>
+    <ul>
+      <li>未经授权访问摄像头或网络、窃取凭据或绕过访问控制。</li>
+      <li>实施非法监视、跟踪、骚扰或其他侵犯隐私的行为。</li>
+      <li>未经许可复制、分发受保护的内容，或绕过数字版权保护措施。</li>
+    </ul>
+    <p>您依法拥有的内容权利仍归您所有。使用本应用不代表您授权我们将摄像头内容用于广告、公开展示或人工智能训练。未成年人应在适当监护下使用本应用，并在法律要求时取得监护人同意。</p>
+    <h2>3. 您的数据与文件</h2>
+    <p>摄像头设置和凭据使用系统安全存储。除非您主动导出或分享，已保存的截图和录像保存在应用私有存储空间内。详情请参阅<a href="rtsp_lite_viewer_privacy-policy_zh.html">隐私政策</a>。</p>
+    <p><strong>导出的配置 JSON 文件未单独加密，其中包含已保存的密码、带有凭据的 URL 和网关鉴权信息。</strong>请妥善保护这些文件，仅导入可信配置，并谨慎选择导出位置。</p>
+    <p>删除应用数据或恢复出厂设置不会删除相册、云存储、其他应用或外部摄像头服务中的副本。恢复出厂设置会清除本地应用数据，包括协议同意记录，并返回首次启动的协议确认页面。删除重要内容前，请先备份。</p>
+    <h2>4. 外部服务与费用</h2>
+    <p>本应用会连接您配置的摄像头、ONVIF 服务、网关以及这些服务返回的媒体地址。相关服务提供方有各自的条款和隐私处理规则。您分享的文件由您选择的接收方处理。</p>
+    <p>RTSP、RTMP 或 HTTP 等连接可能不加密。在支持的情况下，请使用 HTTPS、RTSPS 或可信的安全网络，并保护好您的凭据。</p>
+    <p>本版本没有应用内购买或自动续订订阅。任何下载价格均以应用商店展示为准。网络、硬件和外部服务的费用由相应提供方确定。App Store 购买和退款申请适用 Apple 的流程及相关消费者权益规定。</p>
+    <h2>5. 软件许可</h2>
+    <p>通过 Apple App Store 获取的应用副本，其软件许可适用 <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apple 标准最终用户许可协议</a>。本应用使用条款是该许可的补充，不替代该许可。涉及软件许可的冲突，按适用的标准最终用户许可协议及强制性法律规定处理。</p>
+    <p>本应用及相关材料属于开发者或相应权利人。开源组件仍适用各自的许可证。应用维护与支持由开发者提供，Apple 不运营本应用服务。</p>
+    <h2>6. 可用性与责任</h2>
+    <p>网络中断、设备故障、格式不受支持或存储空间不足可能导致延迟、连接失败或录像不完整。请确认重要录像已成功保存。请勿将本应用作为唯一的应急、人身安全保障或报警系统。</p>
+    <p>我们会以合理的注意维护本应用。各方依法对自身行为承担责任。本协议不排除依法不得排除的责任，也不限制您依法享有的消费者权益。</p>
+    <h2>7. 条款变更与停止使用</h2>
+    <p>我们可能根据应用或适用要求的变化更新本协议，并修改上方日期。对于重大变更，我们会以适当方式通知，并在需要时重新征得同意。同意本协议不替代另行要求的隐私同意或系统权限授权。</p>
+    <p>您可以停止使用本应用，并按隐私政策说明管理数据。如有争议，请联系我们；如未能解决，您可以依法向有管辖权的机构寻求救济。</p>
+    <h2>8. 联系我们</h2>
+    <p>如需应用支持或对本协议有疑问，请联系：</p>
+    <p>电子邮箱：<strong>cinderhk@163.com</strong></p>
+    <p>请勿在邮件中包含摄像头密码、访问令牌或与问题无关的私人录像。</p>
+  </main>
+</body>
+</html>

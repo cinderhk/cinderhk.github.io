@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="referrer" content="no-referrer">
+  <meta name="description" content="RTSP Lite Viewer 帮助与支持">
+  <title>RTSP Lite Viewer - 帮助与支持</title>
+  <style>
+    :root { color-scheme: light dark; --bg: #f7f8fa; --paper: #fff; --text: #202d3d; --muted: #637083; --line: #dde3ea; --accent: #276b54; }
+    * { box-sizing: border-box; }
+    html { scroll-padding-top: 24px; }
+    body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.8 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; overflow-wrap: anywhere; }
+    main { max-width: 860px; margin: 28px auto; padding: 42px 48px; background: var(--paper); border: 1px solid var(--line); border-radius: 16px; }
+    header { text-align: center; padding-bottom: 24px; margin-bottom: 28px; border-bottom: 1px solid var(--line); }
+    .brand { margin: 0 0 12px; color: var(--accent); font-size: clamp(1.5rem, 3.5vw, 1.75rem); line-height: 1.35; font-weight: 700; letter-spacing: .01em; }
+    h1 { font-size: 2rem; line-height: 1.3; margin: 0 0 12px; }
+    .date { color: var(--muted); font-size: 15px; margin: 0; }
+    h2 { font-size: 1.2rem; line-height: 1.5; margin: 32px 0 12px; }
+    p { margin: 12px 0; }
+    ul { padding-left: 1.3em; }
+    li { padding-left: 3px; margin: 10px 0; }
+    a { color: var(--accent); text-underline-offset: .18em; }
+    a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+    strong { font-weight: 650; }
+    @media (max-width: 600px) { main { margin: 0; padding: 28px 22px 36px; border: 0; border-radius: 0; } h1 { font-size: 1.75rem; } }
+    @media (prefers-color-scheme: dark) { :root { --bg: #101821; --paper: #1a2633; --text: #eaf0f6; --muted: #aab8c8; --line: #354556; --accent: #70d3ad; } }
+    @media print { :root { --bg: #fff; --paper: #fff; --text: #000; --muted: #333; --line: #bbb; --accent: #000; } body { font-size: 11pt; } main { max-width: none; margin: 0; padding: 0; border: 0; } h2 { break-after: avoid; } }
+  </style>
+</head>
+<body>
+  <main id="content">
+    <header>
+      <p class="brand">RTSP Lite Viewer</p>
+      <h1>帮助与支持</h1>
+      <p class="date">Connect Every View</p>
+    </header>
+<p>如需 RTSP Lite Viewer 使用帮助、提交反馈或咨询隐私问题，请联系 <strong>cinderhk@163.com</strong>。</p>
+    <h2>连接摄像头</h2>
+    <p>打开“设备”并轻点“+”，选择直接连接网络视频流、兼容的 ONVIF 摄像头或您的外部 GB28181 网关。RTSP Lite Viewer 不提供摄像头、视频源或云端录像服务。</p>
+    <h2>视频流无法播放</h2>
+    <p>打开“实时”并轻点连接详情按钮。确认摄像头或网关可以访问、播放地址正确且账户已获授权。使用 ONVIF 时，请手动填写摄像头地址、允许本地网络访问，并加载媒体配置。如果 UDP 播放不稳定，可在设备设置中尝试 TCP。</p>
+    <h2>截图、录像与备份</h2>
+    <p>拍摄的媒体保存在您的设备上，可在“媒体库”查看。截图保存为 PNG，新录像保存为 MKV 视频并保留声音。录制准备完成后从 00:00 开始计时；停止后计时冻结，并显示保存进度百分比。应用在设备本地裁掉计时之前的缓存片段并重新编码，确认成品文件的整数秒时长与停止时的计时一致后，才加入媒体库。请等待“保存中”结束，处理时间取决于录像长度和设备性能。预览静音仅调整播放音量，不会移除录像中的源音轨。</p>
+    <p>保存到相册时，应用会在设备本地将录像转换为兼容的 MP4 副本，再请求系统保存；需要相册权限和足够的存储空间。转换期间显示进度并可取消，原始录像仍保留在媒体库。系统分享导出原始文件。摄像头配置导出文件包含凭据，请妥善保管。</p>
+    <h2>求助时请提供的信息</h2>
+    <p>请提供“设置 → 关于”中的应用版本、设备型号、操作系统版本、连接类型和错误信息。发送文件或截图前，请移除密码、令牌、私有视频流地址，以及可识别个人身份的摄像头影像。</p>
+    <h2>数据管理</h2>
+    <p>您可以单独删除设备或媒体，也可以通过“设置 → 恢复出厂设置”清除本地应用数据，包括协议同意记录，并返回首次启动的协议确认页面。已导出或分享的副本需要单独删除。</p>
+  </main>
+</body>
+</html>

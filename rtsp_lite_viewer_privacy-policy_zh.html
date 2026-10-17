@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="referrer" content="no-referrer">
+  <meta name="description" content="RTSP Lite Viewer 隐私政策">
+  <title>RTSP Lite Viewer - 隐私政策</title>
+  <style>
+    :root { color-scheme: light dark; --bg: #f7f8fa; --paper: #fff; --text: #202d3d; --muted: #637083; --line: #dde3ea; --accent: #276b54; }
+    * { box-sizing: border-box; }
+    html { scroll-padding-top: 24px; }
+    body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.8 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; overflow-wrap: anywhere; }
+    main { max-width: 860px; margin: 28px auto; padding: 42px 48px; background: var(--paper); border: 1px solid var(--line); border-radius: 16px; }
+    header { text-align: center; padding-bottom: 24px; margin-bottom: 28px; border-bottom: 1px solid var(--line); }
+    .brand { margin: 0 0 12px; color: var(--accent); font-size: clamp(1.5rem, 3.5vw, 1.75rem); line-height: 1.35; font-weight: 700; letter-spacing: .01em; }
+    h1 { font-size: 2rem; line-height: 1.3; margin: 0 0 12px; }
+    .date { color: var(--muted); font-size: 15px; margin: 0; }
+    h2 { font-size: 1.2rem; line-height: 1.5; margin: 32px 0 12px; }
+    p { margin: 12px 0; }
+    ul { padding-left: 1.3em; }
+    li { padding-left: 3px; margin: 10px 0; }
+    a { color: var(--accent); text-underline-offset: .18em; }
+    a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+    strong { font-weight: 650; }
+    @media (max-width: 600px) { main { margin: 0; padding: 28px 22px 36px; border: 0; border-radius: 0; } h1 { font-size: 1.75rem; } }
+    @media (prefers-color-scheme: dark) { :root { --bg: #101821; --paper: #1a2633; --text: #eaf0f6; --muted: #aab8c8; --line: #354556; --accent: #70d3ad; } }
+    @media print { :root { --bg: #fff; --paper: #fff; --text: #000; --muted: #333; --line: #bbb; --accent: #000; } body { font-size: 11pt; } main { max-width: none; margin: 0; padding: 0; border: 0; } h2 { break-after: avoid; } }
+  </style>
+</head>
+<body>
+  <main id="content">
+    <header>
+      <p class="brand">RTSP Lite Viewer</p>
+      <h1>隐私政策</h1>
+      <p class="date">更新日期：<time datetime="2026-10-17">2026年10月17日</time></p>
+    </header>
+<p>RTSP Lite Viewer 由其应用商店页面所列的开发者提供（以下简称“我们”）。本政策说明应用如何处理摄像头信息、媒体和本地文件，以及您如何管理这些信息。</p>
+    <h2>1. 概述</h2>
+    <p>本应用无需注册应用账户，不包含广告、跨应用跟踪、第三方统计分析或崩溃报告服务。我们不运营用于保存摄像头配置，或中转、存储摄像头视频的后端服务。</p>
+    <p>摄像头配置、截图、录像和偏好设置保存在您的设备上。播放时，应用会连接您配置的摄像头、网关和媒体服务器。这些内容不会自动上传给开发者。在线政策页面、外部服务和支持邮件会涉及独立的网络活动，详见下文。</p>
+    <h2>2. 保存在您设备上的信息</h2>
+    <ul>
+      <li><strong>摄像头配置：</strong>名称、分组、视频流 URL、ONVIF 地址、用户名、密码、视频流标识、网关地址、摄像头或通道标识、鉴权请求头及播放设置，用于设备列表和连接功能。</li>
+      <li><strong>已保存的媒体：</strong>截图、录像、缩略图、摄像头名称、拍摄时间及录像时长。录像可能包含来源视频流中的音频。预览静音仅调整播放音量，不会移除录像中的源音轨。</li>
+      <li><strong>偏好设置与同意记录：</strong>语言、外观、播放偏好以及已确认的政策版本，用于恢复设置和判断是否显示协议确认页面。</li>
+    </ul>
+    <p>配置、凭据、偏好设置和政策版本使用系统安全存储，包括 iOS 钥匙串。应用还会在不参与标准设备备份的私有目录中保存一份独立确认记录；只有两份记录均有效时，才会跳过首次启动的协议确认页面。媒体及其元数据保存在应用私有目录中。本应用不会为已保存的媒体另行添加密码加密。</p>
+    <h2>3. 摄像头连接</h2>
+    <p>连接设备时，应用会向您配置的摄像头、ONVIF 服务或 GB28181 网关发送必要的请求参数和鉴权信息。播放时也可能连接这些服务返回的媒体地址。接收请求的服务器可以看到您的 IP 地址等连接信息，并可能保留自身的日志。</p>
+    <p>请仅连接可信且您有权使用的服务。RTSP、RTMP 和 HTTP 连接可能不加密。在支持的情况下，请使用 RTSPS、HTTPS 或可信的安全网络。</p>
+    <h2>4. 权限</h2>
+    <ul>
+      <li><strong>本地网络：</strong>用于连接您在应用中配置的局域网摄像头地址。拒绝访问可能使相关操作无法完成。</li>
+      <li><strong>iOS 添加照片权限：</strong>在您选择将截图或录像保存到相册时请求。本应用不会扫描或读取现有相册。拒绝该权限不会阻止播放或查看应用内保存的媒体。</li>
+      <li><strong>文件与分享：</strong>由系统界面处理您选择的文件和目标位置，不扫描无关文件。</li>
+      <li><strong>Android 权限：</strong>应用使用网络访问和网络状态。在 Android 9 及更早版本上，保存到公共媒体库时可能需要存储写入权限。</li>
+    </ul>
+    <p>本应用不请求访问手机摄像头、麦克风、通讯录、位置、通知或广告跟踪权限。音频来自远程媒体流。您可以在系统设置中调整权限；可选权限不会限制无关功能。</p>
+    <h2>5. 分享与配置导出</h2>
+    <p>保存到相册、分享媒体和导出配置文件均由您主动发起。所选文件会交给您选择的系统功能、应用或文件服务提供方，并按该提供方的规则处理。</p>
+    <p><strong>导出的配置 JSON 文件未单独加密，其中包含已保存的密码、带有凭据的 URL 或网关鉴权信息。</strong>请妥善保管。导入时仅会读取您选择的配置文件。</p>
+    <p>删除应用内的项目不会删除已经保存到相册、云存储、接收方应用或外部服务器的副本。请单独管理这些副本。</p>
+    <h2>6. 组件与外部服务</h2>
+    <p>本应用使用 Flutter 构建界面，使用 media_kit 和 libmpv 播放及录制媒体，使用 easy_onvif 和 http 与设备及网关通信，并使用 flutter_secure_storage 进行本地安全存储。这些功能不需要将您的摄像头配置或媒体发送给组件维护者。</p>
+    <p>当您通过 GitHub Pages 访问这些文档时，GitHub 会接收技术请求信息，可能包括 IP 地址、请求时间、页面地址及浏览器信息。相关处理和保存规则见 <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub 隐私声明</a>。文档本身不包含广告或统计分析脚本。</p>
+    <p>您的摄像头、网关、分享目标和平台服务可能依据各自的政策处理信息。Apple 服务适用 <a href="https://www.apple.com/legal/privacy/">Apple 隐私政策</a>。设备备份、iCloud 照片和文件服务可能保留独立副本。根据其基础设施和您的选择，外部提供方可能在其他国家或地区处理信息。</p>
+    <p>我们不出售个人信息，也不将摄像头内容用于广告画像或人工智能训练。如委托服务提供方代我们处理个人信息，我们会限制其处理目的和访问范围，并要求其按照本政策及适用要求保护信息。</p>
+    <h2>7. 保存、删除与您的选择</h2>
+    <p>摄像头配置、偏好设置和已保存的媒体会保留至您编辑、删除或成功执行恢复出厂设置，不会在固定天数后自动到期。</p>
+    <ul>
+      <li>通过设备管理编辑或删除摄像头，或导出配置副本。删除摄像头不会自动删除已保存的媒体。</li>
+      <li>在媒体库中删除截图和录像。应用也会移除对应的临时分享副本。在 iOS 上，后续分享操作会尝试清理超过 24 小时的临时副本；这不代表保证按计划定时删除。</li>
+      <li>通过<strong>设置 → 恢复出厂设置</strong>清除摄像头、分组、偏好设置、已保存的媒体、临时分享文件和协议同意记录。<strong>完成后会返回首次启动的协议确认页面。</strong></li>
+      <li>停止播放、移除摄像头或关闭系统权限，可停止对应的后续访问。外部副本和备份需要单独删除。</li>
+    </ul>
+    <p>iOS 钥匙串项目可能在删除应用后仍然保留，系统卸载应用功能或备份也可能保留其他数据。请先使用应用内的删除功能，不要仅依赖卸载。删除应用后重新安装，或通过系统设置清除应用数据，会移除本地确认记录，因此需要重新确认协议。系统保留数据的“卸载 App”与“删除 App”不同。如果操作失败，请重试并确认结果。</p>
+    <p>根据适用法律，您可以请求访问、更正、删除、限制处理或获取我们持有的信息副本以行使可携带权，也可以反对处理、在以同意为处理依据时撤回同意，或向有管辖权的机构投诉。请通过下方邮箱联系我们。撤回不影响此前基于同意进行的合法处理。</p>
+    <p>我们无法远程访问或删除仅保存在您设备上的信息，您需要在本地进行管理；如需处理本地政策确认记录的协助，可以联系我们。我们会在适用法律规定的期限内答复，并仅要求提供处理请求合理所需的信息。</p>
+    <h2>8. 支持邮件与安全</h2>
+    <p>如果您发送邮件，我们会通过网易 163 邮箱接收您的邮箱地址、邮件内容和附件，用于回复、解决您的请求及履行必要的法律义务。我们仅为这些目的保存往来邮件，并在不再需要时删除，法律另有保存要求的除外。邮件服务也会为投递和存储邮件而处理相关内容。</p>
+    <p>请勿发送摄像头密码、访问令牌或无关的私人媒体。处理隐私请求不需要您提供无关信息。</p>
+    <p>本应用使用系统安全存储和私有目录保护本地数据。请设置设备密码、保持系统及摄像头更新，并妥善保护备份和导出文件。如果我们处理的信息受到安全事件影响，我们会采取适当措施，并依法履行通知义务。</p>
+    <h2>9. 儿童隐私</h2>
+    <p>本应用并非专门面向儿童，也不通过账户注册收集儿童身份信息。但摄像头影像仍可能包含儿童相关信息。请仅在适当授权下处理，并在需要时取得监护人同意。</p>
+    <p>家长或监护人可就相关问题联系我们。仅保存在设备上或由外部摄像头服务持有的信息，也需要通过设备上的控制功能或相关服务提供方进行管理。</p>
+    <h2>10. 政策变更</h2>
+    <p>当我们的处理方式发生变化时，会更新本政策及上方日期。对于重大变更，我们会以适当方式通知，并在需要时重新征得同意。您可以通过<strong>设置 → 关于 → 隐私政策</strong>再次查阅。</p>
+    <h2>11. 联系我们</h2>
+    <p>如有隐私问题、请求或投诉，请联系：</p>
+    <p>电子邮箱：<strong>cinderhk@163.com</strong></p>
+    <p>另请参阅我们的<a href="rtsp_lite_viewer_user-agreement_zh.html">用户协议</a>。</p>
+  </main>
+</body>
+</html>

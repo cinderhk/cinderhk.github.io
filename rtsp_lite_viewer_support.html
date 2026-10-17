@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="referrer" content="no-referrer">
+  <meta name="description" content="RTSP Lite Viewer Support">
+  <title>RTSP Lite Viewer - Help &amp; Support</title>
+  <style>
+    :root { color-scheme: light dark; --bg: #f7f8fa; --paper: #fff; --text: #202d3d; --muted: #637083; --line: #dde3ea; --accent: #276b54; }
+    * { box-sizing: border-box; }
+    html { scroll-padding-top: 24px; }
+    body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.8 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; overflow-wrap: anywhere; }
+    main { max-width: 860px; margin: 28px auto; padding: 42px 48px; background: var(--paper); border: 1px solid var(--line); border-radius: 16px; }
+    header { text-align: center; padding-bottom: 24px; margin-bottom: 28px; border-bottom: 1px solid var(--line); }
+    .brand { margin: 0 0 12px; color: var(--accent); font-size: clamp(1.5rem, 3.5vw, 1.75rem); line-height: 1.35; font-weight: 700; letter-spacing: .01em; }
+    h1 { font-size: 2rem; line-height: 1.3; margin: 0 0 12px; }
+    .date { color: var(--muted); font-size: 15px; margin: 0; }
+    h2 { font-size: 1.2rem; line-height: 1.5; margin: 32px 0 12px; }
+    p { margin: 12px 0; }
+    ul { padding-left: 1.3em; }
+    li { padding-left: 3px; margin: 10px 0; }
+    a { color: var(--accent); text-underline-offset: .18em; }
+    a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+    strong { font-weight: 650; }
+    @media (max-width: 600px) { main { margin: 0; padding: 28px 22px 36px; border: 0; border-radius: 0; } h1 { font-size: 1.75rem; } }
+    @media (prefers-color-scheme: dark) { :root { --bg: #101821; --paper: #1a2633; --text: #eaf0f6; --muted: #aab8c8; --line: #354556; --accent: #70d3ad; } }
+    @media print { :root { --bg: #fff; --paper: #fff; --text: #000; --muted: #333; --line: #bbb; --accent: #000; } body { font-size: 11pt; } main { max-width: none; margin: 0; padding: 0; border: 0; } h2 { break-after: avoid; } }
+  </style>
+</head>
+<body>
+  <main>
+    <header><p class="brand">RTSP Lite Viewer</p><h1>Help &amp; Support</h1><p class="date">Connect Every View</p></header>
+    <p>For help with RTSP Lite Viewer, feedback or privacy questions, contact <strong>cinderhk@163.com</strong>.</p>
+    <h2>Connecting a camera</h2>
+    <p>Open Devices and tap +. Choose a direct network stream, a compatible ONVIF camera, or your external GB28181 gateway. RTSP Lite Viewer does not supply cameras, feeds or a cloud recording service.</p>
+    <h2>When a stream will not play</h2>
+    <p>Open Live and tap the connection details button. Check that the camera or gateway is reachable, the stream address is correct, and the account is authorized. For ONVIF, enter the camera address manually, allow local network access, and load its media profiles. For an unreliable UDP stream, try TCP in the device settings.</p>
+    <h2>Photos, recordings and backups</h2>
+    <p>Captured media is stored on your device and appears in Library. Snapshots are saved as PNG. New recordings are saved as MKV files with audio. The timer starts at 00:00 when recording is ready. After you stop, the timer freezes and saving progress is shown as a percentage. The app trims cached content from before the timer started and re-encodes the video locally, checking that the saved file has the same duration in whole seconds as the stopped timer before adding it to Library. Wait for saving to finish; processing time depends on the recording length and device performance. Muting preview playback does not remove source audio tracks from recordings.</p>
+    <p>When saving to Photos, the app prepares a compatible MP4 copy locally on your device before asking the system to save it. Photo library permission and sufficient storage are required. Conversion shows progress and can be cancelled; the original recording stays in Library. System sharing exports the original file. Camera configuration exports contain credentials and should be kept private.</p>
+    <h2>Information to include in a support request</h2>
+    <p>Include the app version from Settings &gt; About, your device model, OS version, connection type and the error message. Remove passwords, tokens, private stream addresses and identifiable camera footage before sending files or screenshots.</p>
+    <h2>Data controls</h2>
+    <p>You can remove individual devices or media, or use Settings &gt; Factory reset to clear local app data, including agreement acceptance records, and return to the welcome agreement screen. Copies you exported or shared must be deleted separately.</p>
+  </main>
+</body>
+</html>
